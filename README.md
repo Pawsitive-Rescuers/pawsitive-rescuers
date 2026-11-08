@@ -112,7 +112,7 @@ If CFL says no, keep using the CFL donate link. For ticketed events, ask CFL wha
 **Option A: Simple link (easiest).** In Zeffy, click **Share** next to the form and copy the form link. In `index.html`, find the Donate button:
 
 ```html
-<a class="btn coral" href="https://lowcountry.fcsuite.com/erp/donate/create/fund?funit_id=5026" ...>Donate</a>
+<a class="btn coral" href="https://lowcountry.fcsuite.com/erp/donate/create/fund?funit_id=5026" ...>Donate now</a>
 ```
 
 Replace the `https://lowcountry...5026` address with your Zeffy link. Keep the quotation marks.
