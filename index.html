@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pawsitive Rescuers | Palmetto Bluff</title>
+<meta name="description" content="Pawsitive Rescuers: Palmetto Bluff residents united by our shared love for rescue animals. Where second chances are our mission.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f9fa;--surface:#fff;--ink:#1c2c30;--muted:#566468;--teal:#0e6672;--teal-ink:#f4f9fa;--logo-teal:#1a9aaa;--coral:#ee8559;--coral-ink:#2b1204;--line:#cfe0e3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1c;--surface:#172528;--ink:#e6f0f1;--muted:#9fb3b6;--teal:#0b4a53;--teal-ink:#e6f0f1;--line:#28393c}}
+:root[data-theme="dark"]{--bg:#0f1a1c;--surface:#172528;--ink:#e6f0f1;--muted:#9fb3b6;--teal:#0b4a53;--teal-ink:#e6f0f1;--line:#28393c}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0 0 .5em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+nav b{font-family:Fraunces,serif;font-size:1.15rem;color:var(--logo-teal)}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;font-size:.95rem;overflow-x:auto}
+nav li a{text-decoration:none;white-space:nowrap}
+nav li a:hover{text-decoration:underline}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}
+.btn.coral{background:var(--coral);color:var(--coral-ink)}
+.btn.line{border-color:currentColor}
+.btn:hover{filter:brightness(1.07)}
+.hero{background:var(--teal);color:var(--teal-ink);padding:4rem 0}
+.hero .wrap{display:grid;gap:2.5rem;grid-template-columns:1.2fr 1fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.4rem);margin-bottom:.35em}
+.hero p{max-width:32rem;font-size:1.2rem;opacity:.95}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.logo{background:#fff;border-radius:24px;padding:1.5rem;justify-self:center;max-width:330px}
+.logo img{display:block;width:100%;height:auto}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.card h3{font-size:1.3rem}
+.card p{margin:0;color:var(--muted)}
+.card h3 a{text-decoration-color:var(--coral);text-underline-offset:4px;text-decoration-thickness:2px}
+.lead{max-width:42rem;color:var(--muted)}
+.band .lead{color:inherit;opacity:.92}
+.events{display:grid;gap:.9rem;margin-top:1.5rem}
+.ev{display:grid;grid-template-columns:5.2rem 1fr;gap:1.2rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.25rem}
+.date{text-align:center;font-family:Fraunces,serif;line-height:1}
+.date span{display:block;font-size:2.1rem;font-weight:700;color:var(--logo-teal)}
+.date small{font:700 .85rem "DM Sans",sans-serif;color:var(--muted)}
+.ev h3{font-size:1.2rem;margin:0 0 .15em}
+.ev p{margin:0;color:var(--muted);font-size:.97rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:.05rem .65rem;margin-bottom:.35rem;background:var(--coral);color:var(--coral-ink)}
+.tag.past{background:var(--line);color:var(--ink)}
+.card p+p{margin-top:.6rem}.card .loc{font-size:.88rem;font-weight:700;color:var(--logo-teal)}.card .more a{font-weight:700;text-decoration-color:var(--coral);text-underline-offset:4px;text-decoration-thickness:2px}.status{margin-top:2rem;font-size:.95rem;color:var(--muted);max-width:42rem}.credit{font-size:.92rem;color:var(--muted);margin-top:1.2rem}
+.band{background:var(--teal);color:var(--teal-ink)}
+.donate{text-align:center}
+.donate .lead{margin:0 auto 1.8rem}
+footer{padding:2.5rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+@media (max-width:700px){.hero .wrap{grid-template-columns:1fr}.logo{order:-1;max-width:220px}}
+@media (max-width:560px){nav b{display:none}section{padding:3.2rem 0}}
+.gallery{columns:3 260px;column-gap:1rem;margin-top:1.5rem}
+.gallery figure{margin:0 0 1rem;break-inside:avoid}
+.ph{display:block;width:100%;padding:0;border:0;border-radius:14px;overflow:hidden;cursor:zoom-in;background:var(--line)}
+.ph img{display:block;width:100%;height:auto}
+.gallery figcaption{font-size:.88rem;color:var(--muted);margin-top:.4rem}
+dialog#lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:92vh;overflow:visible}
+dialog#lb::backdrop{background:rgba(0,0,0,.82)}
+#lb img{display:block;max-width:100%;max-height:84vh;margin:0 auto;border-radius:10px}
+#lbx{display:block;margin:.7rem auto 0;padding:.5rem 1.2rem;border-radius:999px;border:0;font:700 1rem "DM Sans",sans-serif;background:var(--coral);color:var(--coral-ink);cursor:pointer}
+.partners{margin-top:2rem}.partners h3{font-size:1.3rem}.partners ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}.partners li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;font-size:.95rem}.partners a{font-weight:700;text-decoration-color:var(--coral);text-underline-offset:4px;text-decoration-thickness:2px}
+.band .card{color:var(--ink)}.featured{display:grid;gap:1.8rem;margin-top:1.5rem}.featured figure{margin:0;max-width:920px}.featured figure.dog{max-width:420px}.featured figcaption{font-size:1rem}.more-h{margin:2.5rem 0 0;font-size:1.3rem}
+#join .btn{display:inline-flex;align-items:center;gap:.55rem}
+.ev ul.ways{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted);font-size:.97rem}.ev ul.ways li+li{margin-top:.35rem}.ev ul.ways a{color:var(--ink);font-weight:700;text-decoration-color:var(--coral);text-underline-offset:3px;text-decoration-thickness:2px}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap"><b>Pawsitive Rescuers</b>
+<ul><li><a href="#about">About</a></li><li><a href="#rescues">Rescues</a></li><li><a href="#events">Events</a></li><li><a href="#photos">Photos</a></li><li><a href="#join">Join</a></li><li><a href="#donate">Donate</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Where second chances are our mission.</h1>
+<p>A community of Palmetto Bluff residents united by our shared love for rescue animals. Join us in making a difference, one tail at a time.</p>
+<p style="font-weight:700;margin-top:1.4rem">Save the date: the 2027 Cocktails for a Cause is Wednesday, October 27, 2027.</p>
+<div class="actions"><a class="btn coral" href="#donate">Donate</a><a class="btn line" href="#join">Join the club</a></div>
+</div>
+<div class="logo"><img src="images/logo.png" alt="Pawsitive Rescuers logo: a dog and a cat sitting together under a heart"></div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+<h2>Who we are</h2>
+<p class="lead">Pawsitive Rescuers is a community of Palmetto Bluff residents united by our shared love for rescue animals. Whether you foster, adopt, volunteer, donate, or simply care deeply about animal welfare, this group is for you. We share stories, celebrate rescues, organize support efforts, and lend a helping paw or hoof whenever we can.</p>
+<p class="lead">Join us in making a difference, one tail at a time.</p>
+<div class="grid" style="margin-top:2rem">
+<div class="card"><h3>Share and celebrate</h3><p>We share stories and celebrate rescues, in our Facebook group and at community events.</p></div>
+<div class="card"><h3>Organize support</h3><p>We raise funds and rally neighbors to support local rescues. We are housed at the Community Foundation of the Lowcountry, a 501(c)(3) public charity.</p></div>
+<div class="card"><h3>Lend a paw or hoof</h3><p>Foster, adopt, volunteer or donate. There is a place for everyone who cares.</p></div>
+</div></div></section>
+
+<section id="rescues" class="band"><div class="wrap">
+<h2>Rescues we support</h2>
+<p class="lead">Visit their websites to meet adoptable animals and learn how to help. We are adding horses to our mission.</p>
+<div class="grid" style="margin-top:2rem">
+<div class="card"><h3><a href="https://hhhumane.org/" target="_blank" rel="noopener">Hilton Head Humane Association</a></h3><p class="loc">Hilton Head Island, SC</p><p>A no-kill shelter that takes in stray, abandoned and abused animals from Hilton Head, Bluffton and Daufuskie.</p><p class="more"><a href="https://hhhumane.org/" target="_blank" rel="noopener">Visit website</a></p></div>
+<div class="card"><h3><a href="https://halsc.org/" target="_blank" rel="noopener">Humane Association of the Lowcountry</a></h3><p class="loc">Beaufort County, SC</p><p>An all-volunteer group devoted to homeless cats and kittens. Volunteers manage feral cat colonies and foster cats in their own homes.</p><p class="more"><a href="https://halsc.org/" target="_blank" rel="noopener">Visit website</a></p></div>
+<div class="card"><h3><a href="https://lovablepawsrescue.org/" target="_blank" rel="noopener">Lovable Paws Rescue</a></h3><p class="loc">Ridgeland, SC</p><p>A volunteer-run, no-kill dog rescue and sanctuary. They take in sick, injured and homeless dogs, care for them and find them loving homes.</p><p class="more"><a href="https://lovablepawsrescue.org/" target="_blank" rel="noopener">Visit website</a></p></div>
+<div class="card"><h3><a href="https://oneloveanimalrescue.com/" target="_blank" rel="noopener">One Love Animal Rescue</a></h3><p class="loc">Savannah, GA area</p><p>Helps abandoned, neglected, abused and unwanted dogs and cats by partnering with shelters, rescue groups and the community to place them in loving homes.</p><p class="more"><a href="https://oneloveanimalrescue.com/" target="_blank" rel="noopener">Visit website</a></p></div>
+<div class="card"><h3><a href="https://www.renegadepawsrescue.org/" target="_blank" rel="noopener">Renegade Paws Rescue</a></h3><p class="loc">Savannah, GA</p><p>A volunteer-based rescue caring for unwanted, abused and injured dogs. Offers adoption, foster and volunteer programs.</p><p class="more"><a href="https://www.renegadepawsrescue.org/" target="_blank" rel="noopener">Visit website</a></p></div>
+<div class="card"><h3><a href="https://shadubahomeforlife.org/" target="_blank" rel="noopener">Shaduba Home for Life</a></h3><p class="loc">Ridgeland, SC</p><p>Provides permanent, loving homes for dogs in need and micro-fosters rescue dogs while they wait for safe, lasting adoptions.</p><p class="more"><a href="https://shadubahomeforlife.org/" target="_blank" rel="noopener">Visit website</a></p></div>
+</div></div></section>
+
+<section id="events"><div class="wrap">
+<h2>Events</h2>
+<p class="lead">Come meet your neighbors and support the animals.</p>
+<div class="events">
+<div class="ev"><div class="date"><span>27</span><small>Oct 2027</small></div><div><span class="tag">Save the date</span><h3>2027 Pawsitive Rescuers Cocktails for a Cause</h3><p>Our 4th annual event is Wednesday, October 27, 2027. Details coming soon.</p></div></div>
+<div class="ev"><div class="date"><span>TBD</span><small>Holiday</small></div><div><span class="tag">This holiday season</span><h3>Holiday drive</h3><p>Keep the animals in the rescues in your heart this holiday season. There are multiple ways you can help.</p><ul class="ways"><li>Give to the Pawsitive Rescuers Fund through the <a href="#donate">Donate button</a>.</li><li>Buy items from a rescue's Amazon wish list: <a href="https://www.amazon.com/hz/wishlist/ls/3PNJ5Y371IKMO?ref_=wl_share" target="_blank" rel="noopener">Hilton Head Humane Association</a>, <a href="https://www.amazon.com/hz/wishlist/ls/23RUSO6XC7RGE" target="_blank" rel="noopener">Lovable Paws Rescue</a>, <a href="https://www.amazon.com/gp/registry/wishlist/101FPZB5SMJJ5" target="_blank" rel="noopener">One Love Animal Rescue</a> and <a href="https://www.amazon.com/hz/wishlist/ls/1CQ4803SQRRMT/" target="_blank" rel="noopener">Renegade Paws Rescue</a>. More wish lists coming soon.</li><li>Give directly to a rescue: <a href="https://fs11.formsite.com/hiltonheadhumane/donate/index.html" target="_blank" rel="noopener">Hilton Head Humane Association</a>, <a href="https://lowcountry.fcsuite.com/erp/donate/create/fund?funit_id=1281" target="_blank" rel="noopener">Humane Association of the Lowcountry</a>, <a href="https://lovablepawsrescue.org/donate" target="_blank" rel="noopener">Lovable Paws Rescue</a>, <a href="https://oneloveanimalrescue.com/donate/" target="_blank" rel="noopener">One Love Animal Rescue</a>, <a href="https://www.renegadepawsrescue.org/donate" target="_blank" rel="noopener">Renegade Paws Rescue</a> or <a href="https://givebutter.com/shadubahomeforlife" target="_blank" rel="noopener">Shaduba Home for Life</a>.</li></ul></div></div>
+<div class="ev"><div class="date"><span>8</span><small>Oct 2026</small></div><div><span class="tag past">Past event</span><h3>2026 Pawsitive Rescuers Cocktails for a Cause</h3><p>Thank you to everyone who came out to support local rescues. See the photos below.</p></div></div>
+</div>
+<p class="credit">Event photos by <a href="https://charleymaephotography.com/" target="_blank" rel="noopener">Charley Mae Photography</a>.</p>
+</div></section>
+
+<section id="photos"><div class="wrap">
+<h2>Photos</h2>
+<p class="lead">Moments from our events. Select a photo to enlarge it.</p>
+<div class="featured">
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Our 2026 Committee"><img src="images/committee-2026.jpg" alt="Members of Pawsitive Rescuers standing together in front of the club’s balloon arch at our October 2026 event." loading="lazy"></button><figcaption>Our 2026 Committee</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Thank you to our 2026 sponsors"><img src="images/sponsors-2026.jpg" alt="The sponsor thank-you banner at the event, showing logos of local businesses and the names of individual and family sponsors." loading="lazy"></button><figcaption>Thank you to our 2026 sponsors</figcaption></figure>
+<figure class="dog"><button type="button" class="ph" aria-label="Enlarge photo: Shiloh, an adoptable dog from Shaduba Home for Life"><img src="images/shiloh-shaduba.jpg" alt="Shiloh, a smiling white adoptable dog on a leash sitting by the marsh." loading="lazy"></button><figcaption>Shiloh, an adoptable dog from Shaduba Home for Life</figcaption></figure>
+</div>
+<h3 class="more-h">More from the evening</h3>
+<div class="gallery">
+<!-- ADD NEW PHOTOS ABOVE THIS LINE -->
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Friends on the dock"><img src="images/friends-on-the-dock.jpg" alt="Five women smiling and raising drinks on a wooden dock overlooking the marsh." loading="lazy"></button><figcaption>Friends on the dock</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Guests under the lights"><img src="images/guests-under-the-lights.jpg" alt="Three guests smiling for the camera beneath a string-lit tent." loading="lazy"></button><figcaption>Guests under the lights</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: At the raffle table"><img src="images/raffle-table.jpg" alt="Three women smiling and hugging at the raffle ticket table." loading="lazy"></button><figcaption>At the raffle table</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Cocktails for a Cause raffle"><img src="images/raffle-sign.jpg" alt="A table sign for the Cocktails for a Cause fine wine and spirits raffle, with a QR code and ticket prices." loading="lazy"></button><figcaption>Cocktails for a Cause raffle</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Raffle bottles"><img src="images/raffle-bottles.jpg" alt="Bottles of bourbon and whiskey lined up on a shelf beside raffle signs." loading="lazy"></button><figcaption>Raffle bottles</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Silent auction"><img src="images/silent-auction.jpg" alt="Guests browsing the silent auction tables of gift baskets and experiences in a wooden pavilion." loading="lazy"></button><figcaption>Silent auction</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Thank-you notes from the rescues we support"><img src="images/rescue-thank-you-notes.jpg" alt="A banner titled “Your generosity changes lives” with thank-you letters from Palmetto Animal League and other rescues we have supported." loading="lazy"></button><figcaption>Thank-you notes from the rescues we support</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Scan to give"><img src="images/scan-to-give.jpg" alt="A table card for the Pawsitive Rescuers Fund with a QR code, next to a flower arrangement." loading="lazy"></button><figcaption>Scan to give</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: 2026 Committee Members and Volunteers"><img src="images/committee-volunteers-2026.jpg" alt="Six men smiling together in front of the Pawsitive Rescuers balloon arch." loading="lazy"></button><figcaption>2026 Committee Members and Volunteers</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Pizza by Southern Peel Pizza"><img src="images/southern-peel-pizza.jpg" alt="A pizza maker in a mustard apron tossing dough in the air in front of the Southern Peel Pizza trailer." loading="lazy"></button><figcaption>Pizza by Southern Peel Pizza</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Neighbors enjoying the evening"><img src="images/neighbors-evening.jpg" alt="Guests laughing together at a bar beneath a string-lit tent, with an autumn flower arrangement in a pumpkin." loading="lazy"></button><figcaption>Neighbors enjoying the evening</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Event details"><img src="images/event-details.jpg" alt="Rustic wooden shelves holding wildflowers in jars, blue candle holders and wine glasses." loading="lazy"></button><figcaption>Event details</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Soul Remedy"><img src="images/soul-remedy.jpg" alt="The band Soul Remedy playing under a string-lit pavilion near the marsh." loading="lazy"></button><figcaption>Soul Remedy</figcaption></figure>
+</div>
+<div class="partners"><h3>Thank you to our 2026 in-kind event partners</h3>
+<ul><li><a href="https://www.thesouthernpeel.com/" target="_blank" rel="noopener">Southern Peel Pizza</a></li>
+<li><a href="https://servicebrewing.com/" target="_blank" rel="noopener">Service Brewing Co.</a></li>
+<li><a href="https://www.curatedwinegroup.com/" target="_blank" rel="noopener">Curated Wine Group</a></li>
+<li><a href="https://www.facebook.com/soulremedymusic843/" target="_blank" rel="noopener">Soul Remedy (band)</a></li>
+<li><a href="https://www.titosvodka.com/" target="_blank" rel="noopener">Tito’s Handmade Vodka</a></li>
+<li><a href="https://charleymaephotography.com/" target="_blank" rel="noopener">Charley Mae Photography</a></li></ul></div>
+<p class="credit">All event photos by <a href="https://charleymaephotography.com/" target="_blank" rel="noopener">Charley Mae Photography</a>.</p>
+<p style="margin-top:1.2rem"><a class="btn coral" href="https://charley-mae-dog-photography.client-gallery.com/gallery/pawsitive-rescuers/2026" target="_blank" rel="noopener">See all photos from 2025 and 2026</a></p>
+</div></section>
+<dialog id="lb" aria-label="Enlarged photo"><img alt=""><button type="button" id="lbx" aria-label="Close">Close</button></dialog>
+<section id="join" class="band"><div class="wrap">
+<h2>Join the club</h2>
+<p class="lead">Join our Facebook group to hear about events and ways to volunteer, and follow us on Instagram for photos and news.</p>
+<div style="display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem">
+<a class="btn coral" href="https://www.facebook.com/groups/2539963563008520" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>Facebook group</a>
+<a class="btn line" href="https://www.instagram.com/pawsitive_rescuers/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>@pawsitive_rescuers</a>
+</div></div></section>
+
+<section id="donate" class="donate"><div class="wrap">
+<h2>Give today</h2>
+<p class="lead">Your gift supports local rescues. Pawsitive Rescuers is housed at the Community Foundation of the Lowcountry, a 501(c)(3) public charity, so your donation may be tax-deductible as allowed by law.</p>
+<a class="btn coral" href="https://lowcountry.fcsuite.com/erp/donate/create/fund?funit_id=5026" target="_blank" rel="noopener">Donate</a>
+<!-- ZEFFY (optional): once your Zeffy form is approved, see README section 3.
+     To embed the form on the page, paste Zeffy's embed code here (and you can delete the Donate button above),
+     or simply replace the Donate button's href with your Zeffy form link. -->
+</div></section>
+</main>
+
+<footer><div class="wrap">Pawsitive Rescuers, Palmetto Bluff, SC. Housed at the Community Foundation of the Lowcountry, a 501(c)(3) public charity. Event photos by Charley Mae Photography.</div></footer>
+<script>
+(function(){var lb=document.getElementById("lb");if(!lb||!lb.showModal)return;var big=lb.querySelector("img");
+document.getElementById("photos").addEventListener("click",function(e){var i=e.target.closest(".ph img");if(!i)return;big.src=i.src;big.alt=i.alt;lb.showModal()});
+document.getElementById("lbx").addEventListener("click",function(){lb.close()});
+lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});})();
+</script>
+</body>
+</html>
