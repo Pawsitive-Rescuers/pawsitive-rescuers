@@ -73,12 +73,13 @@ dialog#lb::backdrop{background:rgba(0,0,0,.82)}
 .partners{margin-top:2rem}.partners h3{font-size:1.3rem}.partners ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}.partners li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;font-size:.95rem}.partners a{font-weight:700;text-decoration-color:var(--coral);text-underline-offset:4px;text-decoration-thickness:2px}
 .band .card{color:var(--ink)}.featured{display:grid;gap:1.8rem;margin-top:1.5rem}.featured figure{margin:0;max-width:920px}.featured figure.dog{max-width:420px}.featured figcaption{font-size:1rem}.more-h{margin:2.5rem 0 0;font-size:1.3rem}
 #join .btn{display:inline-flex;align-items:center;gap:.55rem}
+.stories{display:grid;gap:1.5rem;margin-top:1.5rem}.story{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1.75rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.25rem}.ba{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.ba figure{margin:0}.ba figcaption{font-size:.88rem;color:var(--muted);margin-top:.45rem}.ba figcaption .tag{margin:0 .3rem 0 0}.story h3{font-size:1.45rem}.story-text p{color:var(--muted);margin:0}.story-text p+p{margin-top:.7rem}@media (max-width:760px){.story{grid-template-columns:1fr}}
 .ev ul.ways{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted);font-size:.97rem}.ev ul.ways li+li{margin-top:.35rem}.ev ul.ways a{color:var(--ink);font-weight:700;text-decoration-color:var(--coral);text-underline-offset:3px;text-decoration-thickness:2px}
 </style>
 </head>
 <body>
 <nav aria-label="Main"><div class="wrap"><b>Pawsitive Rescuers PB</b>
-<ul><li><a href="#about">About</a></li><li><a href="#rescues">Rescues</a></li><li><a href="#events">Events</a></li><li><a href="#photos">Photos</a></li><li><a href="#join">Join</a></li><li><a href="#donate">Donate</a></li></ul></div></nav>
+<ul><li><a href="#about">About</a></li><li><a href="#rescues">Rescues</a></li><li><a href="#stories">Stories</a></li><li><a href="#events">Events</a></li><li><a href="#photos">Photos</a></li><li><a href="#join">Join</a></li><li><a href="#donate">Donate</a></li></ul></div></nav>
 
 <header class="hero"><div class="wrap">
 <div>
@@ -112,6 +113,24 @@ dialog#lb::backdrop{background:rgba(0,0,0,.82)}
 <div class="card"><h3><a href="https://www.renegadepawsrescue.org/" target="_blank" rel="noopener">Renegade Paws Rescue</a></h3><p class="loc">Savannah, GA</p><p>A volunteer-based rescue caring for unwanted, abused and injured dogs. Offers adoption, foster and volunteer programs.</p><p class="more"><a href="https://www.renegadepawsrescue.org/" target="_blank" rel="noopener">Visit website</a></p></div>
 <div class="card"><h3><a href="https://shadubahomeforlife.org/" target="_blank" rel="noopener">Shaduba Home for Life</a></h3><p class="loc">Ridgeland, SC</p><p>Provides permanent, loving homes for dogs in need and micro-fosters rescue dogs while they wait for safe, lasting adoptions.</p><p class="more"><a href="https://shadubahomeforlife.org/" target="_blank" rel="noopener">Visit website</a></p></div>
 </div></div></section>
+
+<section id="stories"><div class="wrap">
+<h2>Rescue stories</h2>
+<p class="lead">Every rescue animal has a story. Here is how a second chance can change a life.</p>
+<div class="stories">
+<article class="story">
+<div class="ba">
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Sherman at the shelter"><img src="images/sherman-before.jpg" alt="Sherman, a scruffy cream-colored dog, standing in a shelter kennel." loading="lazy"></button><figcaption><span class="tag past">Before</span> Sherman at the shelter</figcaption></figure>
+<figure><button type="button" class="ph" aria-label="Enlarge photo: Slick Willie Moonshine at home"><img src="images/willie-after.jpg" alt="Slick Willie Moonshine, freshly groomed and fluffy white, sitting on a wooden staircase at home." loading="lazy"></button><figcaption><span class="tag">After</span> Slick Willie Moonshine at home</figcaption></figure>
+</div>
+<div class="story-text">
+<h3>From Sherman to Slick Willie Moonshine</h3>
+<p>Sherman was found wandering a roadside here in the Lowcountry. A kind Hardeeville police officer brought him to Jasper Animal Rescue Mission, with no microchip and no one to claim him.</p>
+<p>Today he is Slick Willie Moonshine, or just Willie for short. He is freshly groomed, well loved, and the newest brother to Lucca and Finley. His breed and age are still a mystery, but one thing is certain: he is safe, sound, and home.</p>
+</div>
+</article>
+</div>
+</div></section>
 
 <section id="events"><div class="wrap">
 <h2>Events</h2>
@@ -182,7 +201,7 @@ dialog#lb::backdrop{background:rgba(0,0,0,.82)}
 <footer><div class="wrap">Pawsitive Rescuers, Palmetto Bluff, SC. The Pawsitive Rescuers Fund is administered by the Community Foundation of the Lowcountry, a 501(c)(3) public charity.</div></footer>
 <script>
 (function(){var lb=document.getElementById("lb");if(!lb||!lb.showModal)return;var big=lb.querySelector("img");
-document.getElementById("photos").addEventListener("click",function(e){var i=e.target.closest(".ph img");if(!i)return;big.src=i.src;big.alt=i.alt;lb.showModal()});
+document.addEventListener("click",function(e){var i=e.target.closest(".ph img");if(!i)return;big.src=i.src;big.alt=i.alt;lb.showModal()});
 document.getElementById("lbx").addEventListener("click",function(){lb.close()});
 lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});})();
 </script>
